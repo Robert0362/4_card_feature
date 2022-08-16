@@ -1,0 +1,49 @@
+body{
+    font-family: Poppins;
+}
+.container
+{
+    text-align: center;
+}
+.top
+{
+    padding: 1rem;
+}
+.main
+{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    text-align: left;
+}
+.firstrow
+{
+    align-self: center;
+}
+.thirdrow
+{
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
