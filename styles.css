@@ -1,0 +1,87 @@
+:root
+{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body
+{
+    font-family: Poppins;
+    font-size: 15px;
+    background-color:var(--VeryLightGray);
+}
+.container
+{
+    margin:2rem;
+}
+.header
+{
+    padding:.5rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.main
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    'card1'
+    'card2'
+    'card3'
+    'card4'
+    ;
+    justify-items: center;
+}
+.card
+{
+    border-radius: 1rem;
+    padding: 1rem;
+    margin:.5rem;
+    box-shadow: 0 10px 20px 2px hsl(212, 86%, 64%, .5);
+}
+.cardOne
+{
+    border-top: 5px solid var(--Cyan);
+    grid-area: card1;
+}
+.cardTwo
+{
+    border-top: 5px solid var(--Red);
+    grid-area: card2;
+}
+.cardThree
+{
+    border-top: 5px solid var(--Orange);
+    grid-area: card3;
+
+}
+.cardFour
+{
+    border-top: 5px solid var(--Blue);
+    grid-area: card4;
+
+}
+.cardFoot
+{
+    padding:.5rem;
+    text-align: right;
+}
+@media(min-width:900px) 
+{
+    .main
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ".      card2       ."
+        "card1  card2   card4"
+        "card1  card3   card4"
+        ".      card3       ."
+        ;
+        }
+}
